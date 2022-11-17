@@ -3,13 +3,17 @@
 Code accompanying the simulation experiments in "Local Constraint Based Causal Discovery under Selection Bias". Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
 ### Citation
 
-Pending the proceedings, the preprint can be found [here](https://arxiv.org/abs/2203.01848), with the following citation.
+The full paper can be found in the Proceedings of Machine Learning Research [here](https://proceedings.mlr.press/v177/versteeg22a.html), with the following citation.
 ```latex
-@article{versteeg2022local,
-  title={Local Constraint-Based Causal Discovery under Selection Bias},
-  author={Versteeg, Philip and Zhang, Cheng and Mooij, Joris M},
-  journal={arXiv preprint arXiv:2203.01848},
-  year={2022}
+@inproceedings{versteeg2022local,
+  title = {Local Constraint-Based Causal Discovery under Selection Bias},
+  author = {Versteeg, Philip and Mooij, Joris and Zhang, Cheng},
+  booktitle = {Proceedings of the First Conference on Causal Learning and Reasoning},
+  pages = {840--860},
+  year = {2022},
+  volume = {177},
+  series = {Proceedings of Machine Learning Research},
+  publisher = {PMLR}
 }
 ```
 ### Installation
@@ -24,7 +28,7 @@ BiocManager::install("RBGL")
 
 ### Experiments
 
-The experiments are run by calling the **Simulate.R** script with the appropriate command line arguments:
+The experiments are run by calling the **Simulate.R** script with the appropriate command line arguments.
 ```shell script
 Rscript Simulate.R [exp] [nseed] [nsamples] [ancestors/patterns]
 ```
